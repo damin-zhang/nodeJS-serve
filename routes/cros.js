@@ -6,8 +6,8 @@ const router = require("express").Router();
 router.get("/jsonp", (req, res) => {
     let fnName = req.query.callback;
     let data = {
-        name: "木子李",
-        address: "四川省成都市高新区"
+        name: "张大敏",
+        address: "四川成都"
     }
     res.send(`${fnName}(${JSON.stringify(data)})`);
 });
